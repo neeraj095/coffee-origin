@@ -1,0 +1,210 @@
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, serif;
+        }
+
+        body {
+            background-color: rgb(24, 43, 34);
+            color: #f1f5f9;
+            overflow-x: hidden;
+        }
+
+        .top {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+            url('https://images.pexels.com/photos/27435336/pexels-photo-27435336.jpeg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .top span {
+            font-size: 32px;
+            font-style: italic;
+            color: #d1d5db;
+        }
+
+        .top h1 {
+            font-size: 72px;
+            letter-spacing: 20px;
+            margin: 15px 0;
+            color: #ffffff;
+            font-weight: normal;
+        }
+
+        .top p {
+            font-size: 15px;
+            letter-spacing: 4px;
+            line-height: 1.8;
+            max-width: 600px;
+            color: #cbd5e1;
+            text-transform: uppercase;
+        }
+
+        .study {
+            padding: 80px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .study h2 {
+            font-size: 36px;
+            letter-spacing: 3px;
+            color: #e2e8f0;
+            margin-bottom: 10px;
+        }
+
+        .study h3 {
+            font-size: 24px;
+            color: #94a3b8;
+            font-weight: 300;
+            margin-bottom: 12px;
+        }
+
+        .study .tag {
+            font-style: italic;
+            color: #64748b;
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, border-color 0.3s;
+        }
+
+        .circle:hover {
+            transform: scale(1.08);
+            border-color: #84cc16;
+        }
+
+        .item span {
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #e2e8f0;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(35, 60, 48);
+            padding: 80px 40px;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .box img {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 40px 0 40px 0;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+
+        .info {
+            max-width: 550px;
+        }
+
+        .info h2 {
+            font-size: 34px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #1a2e22;
+        }
+
+        .box.alt {
+            background-color: rgb(24, 43, 34);
+            flex-direction: row-reverse;
+        }
+
+        .box.alt img {
+            border-radius: 0 40px 0 40px;
+        }
+
+        .bottom {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+            url('https://images.pexels.com/photos/159101/plant-grass-green-leaves-159101.jpeg') center/cover;
+        }
+
+        .bottom h2 {
+            font-size: 42px;
+            letter-spacing: 8px;
+            margin-bottom: 15px;
+            color: #f8fafc;
+        }
+
+        .bottom p {
+            font-size: 20px;
+            color: #cbd5e1;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .top h1 {
+                font-size: 42px;
+                letter-spacing: 8px;
+            }
+
+            .box {
+                padding: 40px 20px;
+            }
+
+            .box img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    
